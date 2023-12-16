@@ -35,6 +35,9 @@ h1 {
 /***********************************/
 /*FORM*/
 #getForm {
+    position: absolute;
+    top: 20rem;
+    z-index: 999;
     display: none;
     margin-top: 2rem;
     background-color: #e1e0e0;
@@ -94,4 +97,50 @@ input {
 }
 
 /***********************************/
-/*Display or hide list of books*/
+/*List of books*/
+#bookList {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: none;
+    margin-top: 2rem;
+    background-color: #ebe9e8;
+    width: 70rem;
+    height: 25rem;
+    border-radius: 12px;
+    filter: drop-shadow(-2px 5px 12px #616161);
+    overflow: auto;
+    flex-direction: column;
+}
+#listHeading {
+    text-align: center;
+    margin-top: 2rem;
+}
+/* Style for the book list table */
+#listTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+#listTable th, #listTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    width: auto;
+}
+
+#listTable th {
+    background-color: #f2f2f2;
+}
+
+#listTable tr:nth-child(even) {
+    background-color: #faf8f8;
+}
+
+#listTable tr:hover {
+    background-color: #e0e0e0;
+}
+td, th {
+    width: 8rem;
+}
