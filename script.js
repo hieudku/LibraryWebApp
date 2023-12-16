@@ -24,15 +24,26 @@ let authorList = [];
 let yearList = [];
 
     /*Constructor */
-function Book() {
-
+function Book(name) {
+    this.name = name;
 }
 
-
-    /* Main */
-function addBookToList() {
-
+function BookAuthor(author) {
+    this.author = author;
 }
+
+function BookYear(year) {
+    this.year = year;
+}
+
+Object.getPrototypeOf(Book.prototype); 
+
+Object.setPrototypeOf(BookAuthor.prototype, Book.prototype);
+Object.getPrototypeOf(BookAuthor.prototype);
+
+Object.getPrototypeOf(BookAuthor.prototype);
+Object.setPrototypeOf(BookYear.prototype, BookAuthor.prototype);
+Object.getPrototypeOf(BookYear.prototype);
 
 /* Add to list button */
 const addToList = document.getElementById("addTo");
