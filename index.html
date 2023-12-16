@@ -16,10 +16,21 @@
     </header>
 
     <!--Show form button-->
-    <button id="showFormBtn">Add Book</button>
+    <div id="btnList">
+        <div class="startBtn">
+            <h2>Add a book</h2>
+            <button id="showFormBtn"><img src="./img/ButtonPlus.png" width="80"></button>
+        </div>
+
+        <div class="startBtn">
+            <h2>View my list</h2>
+            <button id="viewList"><img src="./img/vecteezy_eye-icon-sign-symbol-design_10150710.png" width="80"></button>
+
+        </div>
+    </div>
 
     <!--Form start here (hidden)-->
-    <form>
+    <form id="getForm">
 
         <div class="formSection">
             <label for="bkName">Book name</label>
@@ -41,6 +52,8 @@
         </button>
     </form>
 
-
+    <main id="bookList">
+        
+    </main>
 </body>
 </html>
