@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css"/>
-    <title>Hangman 1.0</title>
+    <title>Library App</title>
 </head>
 <body>
-    
+    <!--Header-->
+    <header>
+
+        <h1>Library App</h1>
+
+    </header>
+
+    <!--Show form button-->
+    <button id="showFormBtn">Add Book</button>
+
+    <!--Form start here (hidden)-->
+    <form>
+
+        <div class="formSection">
+            <label for="bkName">Book name</label>
+            <input type="text" id="bkName" name="bkName">
+        </div>
+
+        <div class="formSection">
+            <label for="bkAuthor">Author</label>
+            <input type="text" id="bkAuthor" name="bkAuthor">
+        </div>
+
+        <div class="formSection">
+            <label for="bkYear">Year</label>
+            <input type="text" id="bkYear" name="bkYear">
+        </div>
+
+        <button id="addTo">
+            Add To List
+        </button>
+    </form>
+
+
 </body>
 </html>

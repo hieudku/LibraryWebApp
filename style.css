@@ -1,0 +1,71 @@
+/*IMPORT FONT*/ 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html {
+    margin: 0;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    background-color: #ececec;
+    padding: 1rem;
+    width: 100vw;
+    margin: 0;
+    text-align: center;
+}
+
+/*FORM*/
+form {
+    margin-top: 5rem;
+    background-color: #e1e0e0;
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 10px;
+}
+.formSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+input {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 15rem;
+}
+#addTo {
+    border: none;
+    background-color: #1f3126;
+    color: #ececec;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+#addTo:hover {
+    transition: ease-in-out 0.2s;
+    background-color: #095626;
+}
+
