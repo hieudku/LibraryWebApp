@@ -78,12 +78,21 @@ addToList.addEventListener("click", (event) => {
                 console.log(bookYear);
                 
                 let readCell = document.createElement("td");
-                
                 let checkBox = document.createElement("input");
                 checkBox.setAttribute("type", "checkbox");
                 readCell.appendChild(checkBox);
                 addRow.appendChild(readCell);
 
+                let removeRow = document.createElement("td");
+                let removeButton = document.createElement("button");
+                removeButton.setAttribute("class","removeBtn");
+                removeButton.textContent = "Remove";
+                removeRow.appendChild(removeButton);
+                addRow.appendChild(removeRow);
+                // Add event listener to button to remove row when clicked
+                    removeButton.addEventListener("click", () => {
+                        addRow.remove();
+                    })
                 // Add the new row to the table
                 listTable.appendChild(addRow);
                 
@@ -97,5 +106,6 @@ addToList.addEventListener("click", (event) => {
             else {
                 alert("Please fill in all the fields.");
             }
-        
 })
+
+

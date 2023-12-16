@@ -144,3 +144,8 @@ input {
 td, th {
     width: 8rem;
 }
+.removeBtn {
+    width: 5rem;
+    height: 1.5rem;
+    align-self: center;
+}
